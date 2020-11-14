@@ -63,9 +63,7 @@ public class App extends Application {
 
 	@Override
 	public void init() throws IOException {}{
-		System.out.println("entrando");
 		try (InputStream input = new FileInputStream(rutaConfig)) {
-			System.out.println("dentro");
 			Properties lectorEntrada = new Properties();
           if (input==null)
         	  System.out.println("sin archivo de configuracion inicial");
